@@ -248,7 +248,7 @@ REQUEST 32
 ADD 10
 ```
 #### Output
-```js
+```python
 50
 40
 50
@@ -287,7 +287,7 @@ When a query instruction appears, print the number of items available for the qu
 ### Example
 
 #### Input
-```js
+```python
 ADD 10 1
 ADD 5 2
 REM 4 2
@@ -298,7 +298,7 @@ QUERY 1
 QUERY 3
 ```
 #### Output
-```js
+```python
 removal refused
 1
 8
