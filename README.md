@@ -236,7 +236,7 @@ Each time a request comes in print an integer denoting the size of the pair of s
 ### Example
 
 #### Input
-```js
+```python
 ADD 30
 ADD 50
 ADD 50
