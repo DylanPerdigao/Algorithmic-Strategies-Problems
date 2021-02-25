@@ -75,7 +75,7 @@ The numbers of the array, one per line, in increasing order.
 
 ### Description
 You start with a list that contains a single value 0, and a pointer to that value. Then you receive a list of instructions that can take the following values:
-```js
+```python
   MOVE LEFT
   MOVE RIGHT
   INSERT LEFT int
@@ -96,7 +96,7 @@ The final list, starting from the leftmost value.
 ### Example
 
 #### Input
-```js
+```python
 INSERT RIGHT 2
 INSERT LEFT -1
 MOVE RIGHT
