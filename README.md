@@ -221,9 +221,10 @@ System stops processing at time 7
 You manage a bowling alleys' shoe lending facility. When a customer arrives, they ask for a given shoe size. If you have a pair of shoes in that size, you lend them those shoes, if not you lend a pair of shoes that have a greater size but that are the closest to that customer's ideal size. For example, if they ask for 40, but you only have 39, 42, and 44. You lend the shoes with size 42. If no such shoes are available in a greater size you turn the customer down.
 
 Initially your shoe stand is empty, then there are two operations that can occur.
-
+```python
   ADD x      # you add a pair of shoes of size x (int) into your stand
   REQUEST y  # service a customer's request for a pair of shoes of size y (int)
+```
 When you receive a request, you need to service it following what was described above, and print either the size that you gave to the customer, or print "impossible" if no feasible size was available. Note that, if you service a request the shoes of that that size leaves your stand.
 
 ### Input
@@ -270,7 +271,7 @@ Available sizes after instruction #9: [10,30]
 
 ### Description
 You are responsible for the software that manages the inventory for your company. To do this, you need to quickly process three types of instructions:
-```js
+```python
   ADD x y    # you add `x` copies of the item with id `y` to the inventory
   REM x y    # you remove `x` copies of the item `y` from the inventory
   QUERY y    # you print how many items with id `y` exist in the inventory 
