@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "ze(std::__1::map&lt;std::__1::pair&lt;int, int&gt;, int, std::__1::less&lt;std::__1::pair&lt;int, int&gt; &gt;, std::__1::allocator&lt;std::__1::pair&lt;std::__1::pair&lt;int, int&gt; const, int&gt; &gt; &gt;, std::__1::vector&lt;int, std::__1::allocator&lt;int&gt; &gt;, std::__1::vector&lt;int, std::__1::allocator&lt;int&gt; &gt;, int, int, int, int):main.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "main:main.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "graph">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
