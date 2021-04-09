@@ -31,9 +31,3 @@
 *.out
 *.app
 .DS_Store
-*.xcodeproj
-*.pbxproj
-*.xcworkspacedata
-*.plist
-*.xcbkptlist
-*.xcuserstate
