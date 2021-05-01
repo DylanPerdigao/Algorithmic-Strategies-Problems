@@ -211,3 +211,113 @@ For each test case, print the minimal number of guards needed to protect all the
 2
 1
 ```
+# Problem G - (Un)social network
+## Description
+Nowadays, everybody knows many, many people. So much so, that the producers of a TV game show are finding it increasingly difficult to find enough people to take part in their show. Given a set of members of a social network, they want to know the size of the largest group of people such that none of its members know one another.
+## Input
+For each test case, the number of members, n, and the number of connections between members, m, are given in the first line, separated by white space. Then, in each of the next m lines, a pair of values, also separated by white space, indicates that two members of the network know each other. Members are numbered from 0 to n-1. Note that some members may not know anyone in the network.
+## Output
+The output for each test case consists of a single line with the maximum size of a group of members who do not know one another.
+## Example
+### Example input 1
+```
+6 6
+0 1
+0 2
+0 3
+0 4
+0 5
+1 5
+```
+### Example input 2
+```
+30 21
+15 10
+6 25
+12 20
+17 20
+20 11
+18 4
+1 19
+5 22
+14 4
+24 13
+7 8
+21 24
+24 8
+11 18
+20 19
+0 16
+28 13
+16 10
+27 24
+22 16
+16 21
+```
+### Example output 1
+```
+4
+```
+### Example output 2
+```
+19
+```
+# Problem H - A mess with the train timetable!
+## Problem
+You are working as a programmer in a railway company. Your duty is to write a software that generates personalized train timetables to users of the company's web system. Everything is going fine until suddenly you drop the coffee into the server that contains the complete trains schedule database .. time to panic! You have only time to print the contents of a table in the database that contains the assignment of trains to train stations. Then, PUM! .. the server blows up! And you do not even know if the data printed is not corrupted!
+Now you have an herculean task: Given several pairs of numbers printed in the sheet of paper that, eventually, correspond to the assignment of trains to train stations, you have to find out whether this data is corrupted or not. Clearly, it is corrupted if a pair of numbers corresponds to two trains or two train stations.. how to find this?
+## Input
+The first line for each test case has two integers n and m corresponding, respectively, to the total number of trains and train stations, and the number of pair assignments printed in the sheet of paper. Then, m lines of data follow. Each line has a pair of integers, each one corresponding to the ID of a train or a train station. Note that the train and train station IDs are distinct and range from 1 to n. Also, you do not know the exact number of trains or train stations. Other test cases may follow.
+## Constraints
+```
+n ≤ 500 
+m ≤ 65 000 
+```
+## Output
+The output for each test case is a line containing "NO" if the data is corrupted and "NOT SURE" otherwise.
+## Example
+### Input
+```
+5 4
+1 2
+1 4
+1 5
+2 3
+5 5
+1 3
+2 4
+2 5
+3 4
+4 5
+```
+### Output
+```
+NOT SURE
+NO
+```
+# Problem I - A joint vacation problem
+## Problem
+This Summer you are going on vacations with some friends and you are planning the places to visit. You have already decided which place to start at and where you want your vacation to end. However, since you are on a tight budget you need to make sure that you spend the least amount of money possible, which means that you might not be able to visit all possible places. You have done the math and know exactly how much you will spend on traveling (on gas, tolls, etc.) from each place A to every other place B. The question now is: how inexpensive can you make your vacation?
+## Input
+The first line gives the number of places (n), and the id number of the place you are finish at (you always start at place 1). Then, n lines follow, each with the id of a place and the list of costs of travelling directly from that place to all others. If it is impossible to go directly from one place to the other, then the cost is -1.
+## Constraints
+```
+n ≤ 200
+```
+## Output
+The minimum possible cost of the vacation.
+## Example
+### Input
+```
+6 6
+1 0 1 2 8 -1 -1
+2 -1 0 -1 -1 3 -1
+3 -1 -1 0 5 3 8
+4 -1 -1 -1 0 -1 12
+5 -1 -1 -1 -1 0 4
+6 -1 -1 -1 -1 -1 0
+```
+### Output
+```
+8
+```
