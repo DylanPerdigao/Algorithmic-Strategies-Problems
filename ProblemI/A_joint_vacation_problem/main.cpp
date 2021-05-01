@@ -2,45 +2,32 @@
 #include <iostream>
 #include <limits.h>
 #include <map>
+#include <unordered_map>
 #include <vector>
 
 using namespace std;
 
 class Graph{
 public:
-    map<int,int> vertex;
+    unordered_map<int,int> vertex;
     map<int,vector<int>> adjacent;
     map<pair<int,int>,int> edge;
 };
 
 
 bool byValue(pair<int, int> a, pair<int, int> b){
-    return a.second > b.second;
-}
-
-map<int, int> sortMap(map<int, int> m){
-    vector<pair<int,int>> v;
-    map<int, int> sortedMap;
-    for(auto p : m){
-        v.push_back(p);
-    }
-    sort(v.begin(), v.end(), byValue);
-    for(auto p : v){
-        sortedMap[p.first]=p.second;
-    }
-    return sortedMap;
+    return a.second < b.second;
 }
 
 
 int dijkstra(Graph g, int start, int end){
     g.vertex[start]=0;
     while(!g.vertex.empty()){
-        
-        sortMap(g.vertex);
-        map<int,int>::iterator it = g.vertex.begin();
-        pair<int,int> u = *it;
 
+        unordered_map<int,int>::iterator it = min_element(g.vertex.begin(), g.vertex.end(), byValue);
+        pair<int,int> u = *it;
         g.vertex.erase(it);
+        
         if(u.first==end){
             return u.second;
         }
