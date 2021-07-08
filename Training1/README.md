@@ -13,11 +13,13 @@ The product of the two given numbers, followed by a line break "\n".
 ### Example
 
 #### Input
+```
 2 4
-
+```
 #### Output
+```
 8
-
+```
 # Problem B
 ## Reverse the order of an array
 
@@ -33,11 +35,14 @@ The array in reverse order, such that each number is separated by a space, follo
 ### Example
 
 #### Input
+```
 3
 1 2 3
+```
 #### Output
+```
 3 2 1
-
+```
 # Problem C
 ## Sorted array
 
@@ -53,15 +58,17 @@ The numbers of the array, one per line, in increasing order.
 ### Example
 
 #### Input
+```
 2
 3
 1
-
+```
 #### Output
+```
 1
 2
 3
-
+```
 # Problem D
 ## Building a list
 
@@ -87,6 +94,7 @@ The final list, starting from the leftmost value.
 ### Example
 
 #### Input
+```
 INSERT RIGHT 2
 INSERT LEFT -1
 MOVE RIGHT
@@ -97,8 +105,9 @@ MOVE LEFT
 MOVE LEFT
 INSERT LEFT -3
 INSERT LEFT -2
-
+```
 #### Output
+```
 -3
 -2
 -1
@@ -106,9 +115,10 @@ INSERT LEFT -2
 1
 2
 3
-
+```
 #### Explanation
 Note: parenthesis denote the element where the pointer is.
+```
 List before any instruction: (0)
 List after instruction #1:   (0) 2  
 List after instruction #2:   -1 (0) 2  
@@ -121,7 +131,7 @@ List after instruction #8:   (-1) 0 1 2 3
 List after instruction #9:   -3 (-1) 0 1 2 3
 List after instruction #10:  -3 -2 (-1) 0 1 2 3
 Final list:                  -3 -2 -1 0 1 2 3
-
+```
 # Problem E
 ## Postfix calculator
 
@@ -129,8 +139,9 @@ Final list:                  -3 -2 -1 0 1 2 3
 Given a set of mathematical expression in postfix notation, such that each operand/operator is separated by a space, print the result of that expression. To simplify, only the '+' and '-' operators are considered.
 
 Example of a postfix expression:
-
+```
 2 3 4 - +
+```
 To compute the result process the expression from the left to the right, then:
 
 - If the next token is a number, push it into the stack
@@ -156,16 +167,18 @@ For each expression print the result of the evaluation.
 ### Example
 
 #### Input
+```
 3
 2 3 4 - +
 10 82 - 12 +
 -1 2 + 1 -
-
+```
 #### Output
+```
 1
 -60
 0
-
+```
 # Problem F
 ## Queue processing time
 
@@ -180,22 +193,25 @@ Return the time at which the system will have processed all the tasks, assuming 
 
 ### Example
 #### Input
+```
 4
 1 2
 1 1
 3 2
 4 1
-
+```
 #### Output
+```
 7
-
+```
 #### Explanation
+```
 Task #1 arrives at time 1, starts at time 1, and finishes at time 3
 Task #2 arrives at time 1, starts at time 3, and finishes at time 4
 Task #3 arrives at time 3, starts at time 4, and finishes at time 6
 Task #4 arrives at time 4, starts at time 6, and finishes at time 7
 System stops processing at time 7
-
+```
 # Problem G
 ## Bowling shoes
 
@@ -203,9 +219,10 @@ System stops processing at time 7
 You manage a bowling alleys' shoe lending facility. When a customer arrives, they ask for a given shoe size. If you have a pair of shoes in that size, you lend them those shoes, if not you lend a pair of shoes that have a greater size but that are the closest to that customer's ideal size. For example, if they ask for 40, but you only have 39, 42, and 44. You lend the shoes with size 42. If no such shoes are available in a greater size you turn the customer down.
 
 Initially your shoe stand is empty, then there are two operations that can occur.
-
+```
   ADD x      # you add a pair of shoes of size x (int) into your stand
   REQUEST y  # service a customer's request for a pair of shoes of size y (int)
+```
 When you receive a request, you need to service it following what was described above, and print either the size that you gave to the customer, or print "impossible" if no feasible size was available. Note that, if you service a request the shoes of that that size leaves your stand.
 
 ### Input
@@ -217,6 +234,7 @@ Each time a request comes in print an integer denoting the size of the pair of s
 ### Example
 
 #### Input
+```
 ADD 30
 ADD 50
 ADD 50
@@ -226,14 +244,16 @@ REQUEST 35
 REQUEST 33
 REQUEST 32
 ADD 10
-
+```
 #### Output
+```
 50
 40
 50
 impossible
-
+```
 ### Explanation
+```
 Available sizes after instruction #1: [30]
 Available sizes after instruction #2: [30,50]
 Available sizes after instruction #3: [30,50,50]
@@ -243,16 +263,17 @@ Available sizes after instruction #6: [30,50]
 Available sizes after instruction #7: [30]
 Available sizes after instruction #8: [30]
 Available sizes after instruction #9: [10,30]
-
+```
 # Problem H
 ## Inventory Management
 
 ### Description
 You are responsible for the software that manages the inventory for your company. To do this, you need to quickly process three types of instructions:
-
+```
   ADD x y    # you add `x` copies of the item with id `y` to the inventory
   REM x y    # you remove `x` copies of the item `y` from the inventory
   QUERY y    # you print how many items with id `y` exist in the inventory 
+```
 Note that, if not enough items exist in the inventory for the remove instruction you print "removal refused" and do not remove any item.
 
 ### Input
@@ -264,6 +285,7 @@ When a query instruction appears, print the number of items available for the qu
 ### Example
 
 #### Input
+```
 ADD 10 1
 ADD 5 2
 REM 4 2
@@ -272,9 +294,11 @@ QUERY 2
 REM 2 1
 QUERY 1
 QUERY 3
-
+```
 #### Output
+```
 removal refused
 1
 8
 0
+```
